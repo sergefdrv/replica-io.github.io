@@ -55,6 +55,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: `${gitHubUrl}/edit/main/`,
         },
+        theme: {
+          customCss: [require.resolve('./src/css/custom.css')],
+        },
       }),
     ],
   ],

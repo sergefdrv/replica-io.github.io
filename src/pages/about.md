@@ -1,6 +1,5 @@
 ---
 title: About
-hide_table_of_contents: true
 ---
 
 # About Replica_IO
@@ -93,10 +92,6 @@ The approach of this project is best characterized as follows:
 - [ ] [M1: Prototype](https://github.com/replica-io/replica-io/milestone/4) — demonstrating how the final framework will look like
 - [ ] [M2: MVP](https://github.com/replica-io/replica-io/milestone/5) — unlocking some actual use cases
 - [ ] [M3: Ready for Integration](https://github.com/replica-io/replica-io/milestone/6) — releasing a version ready for integration into production
-
-## Additional Resources 📎
-
-- [Introduction to Replica_IO](https://youtu.be/oJlryr6bMCo) | [slides](https://docs.google.com/presentation/d/15DsYbejUOlPlECkaM8zqgOp8KJdSSklLfIrWEWeMnUU)
 
 ## Contributing 🙏
 

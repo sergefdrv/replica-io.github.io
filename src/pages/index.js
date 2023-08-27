@@ -4,7 +4,9 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import React from 'react';
 
-import About from './about.md';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -16,6 +18,11 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+          <Link
+            className="button button--primary button--lg"
+            to="/about">
+            About
+          </Link>
           <Link
             className="button button--primary button--lg"
             to={siteConfig.customFields.gitHubUrl}>
@@ -35,7 +42,9 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <div className="container container--fluid margin-vert--xl">
-          <About />
+          <div className="video-container" style={{ maxWidth: '1280px' }}>
+            <LiteYouTubeEmbed id='oJlryr6bMCo' title="Introduction to Replica_IO" />
+          </div>
         </div>
       </main>
     </Layout>
