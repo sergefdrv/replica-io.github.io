@@ -1,4 +1,5 @@
 import Link from '@docusaurus/Link';
+import useBrokenLinks from '@docusaurus/useBrokenLinks';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
@@ -35,6 +36,9 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
+
+  useBrokenLinks().collectAnchor('#contact-email');
+
   return (
     <Layout
       description={siteConfig.customFields.description}>
