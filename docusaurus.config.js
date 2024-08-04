@@ -47,6 +47,8 @@ const config = {
     locales: ['en'],
   },
 
+  clientModules: ['/js/unscrambleEmail.js'],
+
   presets: [
     [
       'classic',
@@ -133,6 +135,13 @@ const config = {
             position: 'right',
             className: 'navbar-icon',
           },
+          {
+            href: '/#contact-email',
+            'aria-label': 'Contact Email',
+            html: '<i class="fa-regular fa-envelope"></i>',
+            position: 'right',
+            className: 'navbar-icon',
+          },
         ],
       },
       footer: {
@@ -161,6 +170,15 @@ const config = {
               {
                 label: 'YouTube',
                 href: youtubeUrl,
+              },
+            ],
+          },
+          {
+            title: 'Contact Us',
+            items: [
+              {
+                label: 'Email',
+                href: '/#contact-email',
               },
             ],
           },
