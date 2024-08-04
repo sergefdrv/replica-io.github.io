@@ -15,6 +15,10 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Docusaurus needs the full commit history to correctly
+          # determine the last update time and author.
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version-file: package.json
