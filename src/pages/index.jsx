@@ -6,6 +6,8 @@ import clsx from 'clsx';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import RecentBlogPosts from '../components/RecentBlogPosts';
+
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -38,6 +40,8 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
 
   useBrokenLinks().collectAnchor('#contact-email');
+
+  const nrRecentBlogPosts = siteConfig.customFields.recentBlogPostsOnHomePage;
 
   return (
     <Layout
@@ -115,6 +119,9 @@ export default function Home() {
             </p>
           </p>
         </p>
+        <div className="container padding-vert--xl">
+          <RecentBlogPosts nrPosts={nrRecentBlogPosts} />
+        </div>
       </main>
     </Layout>
   );
