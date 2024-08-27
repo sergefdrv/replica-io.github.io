@@ -60,6 +60,7 @@ const config = {
         showLastUpdateTime: true,
         showLastUpdateAuthor: true,
         onUntruncatedBlogPosts: 'throw',
+        onInlineAuthors: 'throw',
         // Remove this to remove the "edit this page" links.
         editUrl: `${siteGitHubUrl}/edit/main/`,
       },
