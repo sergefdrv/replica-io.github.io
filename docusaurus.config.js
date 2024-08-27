@@ -59,6 +59,7 @@ const config = {
         showReadingTime: true,
         showLastUpdateTime: true,
         showLastUpdateAuthor: true,
+        onUntruncatedBlogPosts: 'throw',
         // Remove this to remove the "edit this page" links.
         editUrl: `${siteGitHubUrl}/edit/main/`,
       },
