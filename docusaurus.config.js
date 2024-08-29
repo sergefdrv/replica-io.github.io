@@ -50,7 +50,7 @@ const config = {
 
   clientModules: ['/js/unscrambleEmail.js'],
 
-  plugins:[
+  plugins: [
     [
       './plugins/blog-plugin',
       {
@@ -59,6 +59,8 @@ const config = {
         showReadingTime: true,
         showLastUpdateTime: true,
         showLastUpdateAuthor: true,
+        onUntruncatedBlogPosts: 'throw',
+        onInlineAuthors: 'throw',
         // Remove this to remove the "edit this page" links.
         editUrl: `${siteGitHubUrl}/edit/main/`,
       },
@@ -70,8 +72,14 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        pages: {
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
+        },
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           // Remove this to remove the "edit this page" links.
           editUrl: `${siteGitHubUrl}/edit/main/`,
         },
