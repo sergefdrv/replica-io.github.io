@@ -5,8 +5,8 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 
 import Heading from '@theme/Heading';
-import styles from './index.module.css';
 import RecentBlogPosts from '../components/RecentBlogPosts';
+import styles from './index.module.css';
 
 
 function HomepageHeader() {
@@ -119,7 +119,7 @@ export default function Home() {
             </p>
           </p>
         </p>
-        <div className="container padding-vert--xl">
+        <div className="container padding-bottom--xl">
           <RecentBlogPosts nrPosts={nrRecentBlogPosts} />
         </div>
       </main>
