@@ -24,7 +24,9 @@
     "prism-react-renderer": "^2.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-lite-youtube-embed": "^2.4.0"
+    "react-lite-youtube-embed": "^2.4.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.8.0",
