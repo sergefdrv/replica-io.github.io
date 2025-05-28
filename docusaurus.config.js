@@ -80,7 +80,8 @@ const config = {
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
-    ]
+    ],
+    'image-zoom',
   ],
 
   presets: [
@@ -243,6 +244,14 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash'],
       },
+      zoom: {
+        selector: '.markdown img',
+        background: {
+          // Using `--ifm-color-white` in light theme because `--ifm-background-color` makes background transparent
+          light: 'var(--ifm-color-white)',
+          dark: 'var(--ifm-background-color)',
+        }
+      }
     }),
 };
 
