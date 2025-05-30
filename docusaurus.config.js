@@ -32,7 +32,17 @@ const config = {
     description: 'An open-source framework for building practical distributed replication mechanisms.',
     gitHubUrl: gitHubUrl,
     siteLicense: siteLicense,
-    recentBlogPostsOnHomePage: 5
+    recentBlogPostsOnHomePage: 5,
+    giscusConfig: {
+      repo: 'replica-io/replica-io',
+      repoId: 'R_kgDOJGevLg',
+      category: 'General',
+      categoryId: 'DIC_kwDOJGevLs4CUted',
+      reactionsEnabled: '1',
+      inputPosition: 'top',
+      loading: 'lazy',
+      themes: {light: 'light', dark: 'transparent_dark'},
+    },
   },
 
   // GitHub pages deployment config.
