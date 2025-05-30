@@ -10,6 +10,7 @@ const sponsorUrl = 'https://github.com/sponsors/replica-io';
 const gitHubUrl = 'https://github.com/replica-io/replica-io';
 const discordUrl = 'https://discord.replica-io.dev';
 const twitterUrl = 'https://x.com/Replica_IO';
+const blueskyUrl = 'https://bsky.app/profile/replica-io.bsky.social';
 const youtubeUrl = 'https://www.youtube.com/@Replica_IO';
 const siteGitHubUrl = 'https://github.com/replica-io/replica-io.github.io';
 const siteLicense = {
@@ -155,6 +156,13 @@ const config = {
             className: 'navbar-icon',
           },
           {
+            href: blueskyUrl,
+            'aria-label': 'Bluesky',
+            html: '<i class="fa-brands fa-bluesky"></i>',
+            position: 'right',
+            className: 'navbar-icon',
+          },
+          {
             href: youtubeUrl,
             'aria-label': 'YouTube',
             html: '<i class="fa-brands fa-youtube"></i>',
@@ -184,6 +192,10 @@ const config = {
                 label: 'Twitter / X',
                 href: twitterUrl,
               },
+              {
+                label: 'Bluesky',
+                href: blueskyUrl,
+              }
             ],
           },
           {
