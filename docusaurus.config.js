@@ -3,6 +3,9 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 const lightCodeTheme = prismThemes.github;
 const darkCodeTheme = prismThemes.dracula;
 
@@ -74,8 +77,11 @@ const config = {
         onInlineAuthors: 'throw',
         // Remove this to remove the "edit this page" links.
         editUrl: `${siteGitHubUrl}/edit/main/`,
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
       },
-    ]
+    ],
+    'image-zoom',
   ],
 
   presets: [
@@ -100,6 +106,16 @@ const config = {
         },
       }),
     ],
+  ],
+
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
 
   themeConfig:
@@ -228,6 +244,14 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash'],
       },
+      zoom: {
+        selector: '.markdown img',
+        background: {
+          // Using `--ifm-color-white` in light theme because `--ifm-background-color` makes background transparent
+          light: 'var(--ifm-color-white)',
+          dark: 'var(--ifm-background-color)',
+        }
+      }
     }),
 };
 
